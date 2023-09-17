@@ -1,5 +1,7 @@
 <script setup>
 import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
+import video from "./assets/movie.mp4";
 </script>
 
 <template>
@@ -8,9 +10,9 @@ import Navbar from "./components/Navbar.vue";
       <Navbar></Navbar>
 
       <header class="py-10">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h1 class="text-3xl font-bold tracking-tight text-white">Dashboard</h1>
-        </div>
+        </div> -->
       </header>
     </div>
 
@@ -18,10 +20,18 @@ import Navbar from "./components/Navbar.vue";
       <div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
         <!-- Replace with your content -->
         <div class="rounded-lg bg-white px-5 py-6 shadow sm:px-6">
-          <div class="h-96 rounded-lg border-4 border-dashed border-gray-200" />
+          <div class="rounded-lg border-4 border-dashed border-gray-200">
+            <video loop autoplay muted class="h-fit rounded-lg">
+              <source :src="video" type="video/mp4" />
+              <source src="movie.ogg" type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
         <!-- /End replace -->
       </div>
     </main>
   </div>
+
+  <Footer></Footer>
 </template>
