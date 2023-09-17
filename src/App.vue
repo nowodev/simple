@@ -1,7 +1,6 @@
 <script setup>
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
-import video from "./assets/movie.mp4";
 </script>
 
 <template>
@@ -22,7 +21,7 @@ import video from "./assets/movie.mp4";
         <div class="rounded-lg bg-white px-5 py-6 shadow sm:px-6">
           <div class="rounded-lg border-4 border-dashed border-gray-200">
             <video loop autoplay muted class="h-fit rounded-lg">
-              <source :src="video" type="video/mp4" />
+              <source src="./assets/movie.mp4" type="video/mp4" />
               <source src="movie.ogg" type="video/ogg" />
               Your browser does not support the video tag.
             </video>
