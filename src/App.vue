@@ -22,7 +22,6 @@ import Footer from "./components/Footer.vue";
           <div class="rounded-lg border-4 border-dashed border-gray-200">
             <video loop autoplay muted class="h-fit rounded-lg">
               <source src="./assets/movie.mp4" type="video/mp4" />
-              <source src="movie.ogg" type="video/ogg" />
               Your browser does not support the video tag.
             </video>
           </div>
