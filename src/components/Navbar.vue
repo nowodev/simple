@@ -18,9 +18,11 @@ const user = {
 };
 const navigation = [
   { name: "Home", href: "#", current: true },
+  { name: "Projects", href: "#", current: false },
   { name: "Music Videos", href: "#", current: false },
   { name: "Films", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
+  { name: "Graphics", href: "#", current: false },
+  { name: "Motion Graphics", href: "#", current: false },
   { name: "Contact", href: "#", current: false },
 ];
 </script>

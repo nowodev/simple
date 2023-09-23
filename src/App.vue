@@ -5,27 +5,33 @@ import Footer from "./components/Footer.vue";
 
 <template>
   <div class="min-h-full">
-    <div class="bg-gray-800 pb-32">
+    <div class="bg-gray800">
       <Navbar></Navbar>
 
-      <header class="py-10">
-        <!-- <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold tracking-tight text-white">Dashboard</h1>
-        </div> -->
-      </header>
+      <!-- <header>
+        <div class="mx-auto max-w-7xl py-4 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold tracking-tight leading-6 text-gray-900">
+            Dashboard
+          </h1>
+        </div>
+      </header> -->
+
+      <video playsinline loop autoplay muted class="w-full">
+        <source src="./assets/movie.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
 
-    <main class="-mt-32">
-      <div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+    <main class="bg-gray-800">
+      <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
         <!-- Replace with your content -->
-        <div class="rounded-lg bg-white px-5 py-6 shadow sm:px-6">
-          <div class="rounded-lg border-4 border-dashed border-gray-200">
-            <video loop autoplay muted class="h-fit rounded-lg">
-              <source src="./assets/movie.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
+        <!-- <div class="px-4 py-4 sm:px-0">
+          <video playsinline loop autoplay muted class="w-full rounded-lg">
+            <source src="./assets/movie.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div> -->
+
         <!-- /End replace -->
       </div>
     </main>
